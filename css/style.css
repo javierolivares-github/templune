@@ -1,0 +1,307 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+/* VARIABLES */
+:root {
+  /* Typography */
+  --h1-bold: 700 4.8rem/1.25 'Mulish', sans-serif;
+  --h2-bold: 700 4rem/1.25 'Mulish', sans-serif;
+  --h3-bold: 700 2.8rem/1.25 'Mulish', sans-serif;
+  --lead-bold: 700 2.2rem/1.25 'Mulish', sans-serif;
+  --body1-bold: 700 1.8rem/1.25 'Mulish', sans-serif;
+  --body2-bold: 700 1.6rem/1.25 'Mulish', sans-serif;
+  --caption-bold: 700 1.4rem/1.25 'Mulish', sans-serif;
+
+  --body1-regular: 400 1.8rem/1.25 'Mulish', sans-serif;
+
+  --h1-light: 300 4.8rem/1.25 'Mulish', sans-serif;
+  --h2-light: 300 4rem/1.25 'Mulish', sans-serif;
+  --h3-light: 300 2.8rem/1.25 'Mulish', sans-serif;
+  --lead-light: 300 2.2rem/1.25 'Mulish', sans-serif;
+  --body1-light: 300 1.8rem/1.25 'Mulish', sans-serif;
+  --body2-light: 300 1.6rem/1.25 'Mulish', sans-serif;
+  --caption-light: 300 1.4rem/1.25 'Mulish', sans-serif;
+
+  /* Colors */
+  --black: #0A0A0A;
+  --black-2: #111111;
+  --black-3: #222222;
+  --gray: #A1B0BF;
+  --white: #fff;
+  --pink: #FF6074;
+  --fuccia: #FE3051;
+
+  /* Spacing 4pt*/
+  /* 2/4/8/12/16/20/24/32/40/48/56/64/72 */
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1 rem = 10px (10px/16px = 0.625)*/
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--black);
+}
+
+/* ******************************* */
+/* REUSABLE */
+/* ******************************* */
+
+/* Buttons */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-align: center;
+  padding: 1.6rem 2rem;
+  border-radius: 0.6rem;
+  font: var(--body1-bold);
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #FF6079 0%, #FE3051 100%);
+}
+
+.btn-secondary {
+  background: var(--black-3);
+}
+
+/* Section-header */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  max-width: 84rem;
+  width: 100%;
+  text-align: center;
+}
+
+.section-header .section-title .light {
+  font: var(--h2-light);
+  color: var(--white);
+}
+
+.section-header .section-title .bold {
+  font: var(--h2-bold);
+  color: var(--fuccia);
+}
+
+.section-header .section-copy {
+  font: var(--lead-light);
+  color: var(--gray);
+}
+
+/* Icons */
+.check-outline {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--fuccia);
+}
+
+/* Card */
+.card {
+  max-width: 35.2rem;
+  width: 100%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-tag {
+  font: var(--body1-bold);
+  color: var(--fuccia);
+}
+
+.card-title {
+  font: var(--h2-bold);
+  color: var(--white);
+}
+
+.card-copy {
+  font: var(--body1-light);
+  color: var(--gray);
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0.4rem 0;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card-item .text {
+  font: var(--body1-light);
+  color: var(--gray);
+}
+
+/* ******************************* */
+/* NAVBAR */
+/* ******************************* */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.6rem 3.2rem;
+  background-color: var(--black);
+}
+
+#navbar .container {
+  max-width: 112rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .logo {
+  font: var(--lead-bold);
+  color: var(--white);
+}
+
+#navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+#navbar .nav-link:link,
+#navbar .nav-link:visited {
+  text-decoration: none;
+  font: var(--body1-regular);
+  color: var(--gray);
+  transition: all 200ms ease-in-out;
+}
+
+#navbar .nav-link:hover,
+#navbar .nav-link:active {
+  color: var(--white);
+}
+
+#navbar .nav-link.active {
+  font: var(--body1-bold);
+  color: var(--white);
+}
+
+/* ******************************* */
+/* HERO */
+/* ******************************* */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.4rem 3.2rem;
+  background-color: var(--black);
+}
+
+#hero .container {
+  max-width: 112rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+#hero .hero-left {
+  max-width: 64rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+#hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#hero .hero-title .light {
+  font: var(--h1-light);
+  color: var(--white);
+}
+
+#hero .hero-title .bold {
+  font: var(--h1-bold);
+  color: var(--fuccia);
+}
+
+#hero .hero-copy {
+  font: var(--lead-light);
+  color: var(--gray);
+}
+
+#hero .hero-buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+#hero .hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ******************************* */
+/* PLANS */
+/* ******************************* */
+#plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12.8rem 3.2rem;
+  background-color: var(--black-2);
+}
+
+#plans .container {
+  max-width: 112rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+#plans .cards {
+  width: 100%;
+  display: flex;
+  gap: 3.2rem;
+}
