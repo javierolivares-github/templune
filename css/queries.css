@@ -1,0 +1,306 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/*****************************/
+/* BELOW 834px/16 (Tablets) */
+/*****************************/
+@media (max-width: 52.125em) {
+
+  /* ******************************* */
+  /* NAVBAR */
+  /* ******************************* */
+  #navbar .nav-menu {
+    display: none;
+  }
+
+  #navbar .menu-outline {
+    display: block;
+  }
+
+  /* ******************************* */
+  /* HERO */
+  /* ******************************* */
+  #hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .hero-left {
+    max-width: 100%;
+  }
+
+  #hero .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero .hero-img {
+    max-width: 44.8rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* ******************************* */
+  /* PLANS */
+  /* ******************************* */
+  #plans {
+    padding: 9.6rem 3.2rem;
+  }
+
+  #plans .cards {
+    flex-direction: column;
+  }
+
+  #plans .card {
+    max-width: 100%;
+  }
+
+  #plans .card-container {
+    width: 100%;
+  }
+
+  /* ******************************* */
+  /* SERVICES */
+  /* ******************************* */
+  #services {
+    padding: 9.6rem 3.2rem;
+  }
+
+  #services .container {
+    max-width: 100%;
+  }
+
+  #services .cards {
+    flex-direction: column;
+  }
+
+  #services .service-card {
+    max-width: 100%;
+  }
+
+  /* ******************************* */
+  /* ARTICLES */
+  /* ******************************* */
+  #articles {
+    padding: 9.6rem 3.2rem;
+  }
+
+  #articles .container {
+    max-width: 100%;
+  }
+
+  #articles .cards {
+    flex-direction: column;
+  }
+
+  #articles .article-card {
+    max-width: 100%;
+  }
+
+  /* ******************************* */
+  /* CALL TO ACTION */
+  /* ******************************* */
+  #cta {
+    padding: 9.6rem 3.2rem;
+  }
+
+  #cta .container {
+    gap: 3.2rem;
+  }
+
+  #cta .form {
+    flex-direction: column;
+  }
+
+  /* ******************************* */
+  /* FOOTER */
+  /* ******************************* */
+  #footer {
+    padding: 4rem 3.2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 430px/16 (Smartphones) */
+/*****************************/
+@media (max-width: 26.875em) {
+
+  /* ******************************* */
+  /* REUSABLES */
+  /* ******************************* */
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font: var(--body2-bold);
+  }
+
+  /* Section-header */
+  .section-header .section-title .light {
+    font: var(--h3-light);
+  }
+
+  .section-header .section-title .bold {
+    font: var(--h3-bold);
+  }
+
+  .section-header .section-copy {
+    font: var(--body1-light);
+  }
+
+  /* ******************************* */
+  /* NAVBAR */
+  /* ******************************* */
+  #navbar {
+    padding: 3.6rem 1.6rem;
+  }
+
+  /* ******************************* */
+  /* HERO */
+  /* ******************************* */
+  #hero {
+    padding: 5.6rem 1.6rem;
+  }
+
+  #hero .container {
+    gap: 4.8rem;
+  }
+
+  #hero .hero-text {
+    gap: 3.2rem;
+  }
+
+  #hero .hero-title .light {
+    font: var(--h2-light);
+  }
+
+  #hero .hero-title .bold {
+    font: var(--h2-bold);
+  }
+
+  #hero .hero-copy {
+    font: --body1-light;
+  }
+
+  #hero .hero-buttons {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  /* ******************************* */
+  /* PLANS */
+  /* ******************************* */
+  #plans {
+    padding: 5.6rem 1.6rem;
+  }
+
+  #plans .container {
+    gap: 4.8rem;
+  }
+
+  #plans .cards {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  #plans .card-tag {
+    font: var(--body2-bold);
+  }
+
+  #plans .card-title {
+    font: var(--h3-bold);
+  }
+
+  #plans .card-copy {
+    font: var(--body2-light);
+  }
+
+  #plans .card-item .text {
+    font: var(--body2-light);
+  }
+
+  /* ******************************* */
+  /* SERVICES */
+  /* ******************************* */
+
+  #services {
+    padding: 5.6rem 1.6rem;
+  }
+
+  #services .container {
+    gap: 4.8rem;
+  }
+
+  #services .cards {
+    gap: 1.6rem;
+  }
+
+  #services .service-card .card-title {
+    font: var(--lead-bold);
+  }
+
+  #services .service-card .card-copy {
+    font: var(--caption-light);
+  }
+
+  #services .service-card .card-link-text {
+    font: var(--caption-bold);
+    line-height: 1.8rem;
+  }
+
+  .arrow-right {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  /* ******************************* */
+  /* ARTICLES SMARTPHONES*/
+  /* ******************************* */
+  #articles {
+    padding: 5.6rem 1.6rem;
+  }
+
+  #articles .container {
+    gap: 4.8rem;
+  }
+
+  #articles .article-img {
+    height: 20rem;
+  }
+
+  #articles .card-content {
+    gap: 3.2rem;
+    padding: 1.6rem;
+  }
+
+  .calendar-outline {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  #articles .date-text {
+    font: var(--caption-light);
+  }
+
+  #articles .card-title {
+    font: var(--body1-bold);
+  }
+
+  #articles .card-author {
+    font: var(--caption-light);
+  }
+
+  .heart,
+  .chatbox,
+  .share-social {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  #articles .statistic-text {
+    font: var(--caption-light);
+  }
+
+  /* ******************************* */
+  /* CALL TO ACTION - SMARTPHONES*/
+  /* ******************************* */
+}
