@@ -303,4 +303,70 @@
   /* ******************************* */
   /* CALL TO ACTION - SMARTPHONES*/
   /* ******************************* */
+  #cta {
+    padding: 5.6rem 1.6rem;
+  }
+
+  #cta .form-group {
+    padding: 1.6rem;
+  }
+
+  #cta .form-title {
+    font: var(--h3-bold);
+    text-align: center;
+  }
+
+  #cta .form-copy {
+    font: var(--body2-light);
+    text-align: center;
+  }
+
+  #cta .form-input {
+    padding: 1.6rem;
+    font: var(--body2-light);
+  }
+
+  #cta .form-input::placeholder {
+    font: var(--body2-light);
+  }
+
+  /* ******************************* */
+  /* FOOTER - SMARTPHONES*/
+  /* ******************************* */
+  #footer {
+    padding: 3.2rem 1.6rem;
+  }
+
+  #footer .container {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  #footer .footer-title .bold {
+    font: var(--body2-bold);
+  }
+
+  #footer .footer-title .light {
+    font: var(--body2-light);
+  }
+
+  #footer .footer-rrss .text {
+    font: var(--caption-light);
+  }
+
+  .logo-instagram,
+  .logo-linkedin,
+  .logo-facebook {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
+  #footer .footer-title {
+    order: 2;
+    text-align: center;
+  }
+
+  #footer .footer-rrss {
+    order: 1;
+  }
 }
