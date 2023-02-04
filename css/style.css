@@ -40,6 +40,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -180,10 +181,10 @@ html {
   color: var(--white);
 }
 
-#navbar .nav-link.active {
+/* #navbar .nav-link.current {
   font: var(--body1-bold);
   color: var(--white);
-}
+} */
 
 #navbar .menu-outline {
   display: none;

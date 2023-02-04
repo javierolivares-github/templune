@@ -1,19 +1,54 @@
+/*****************************/
+/* TABLET VIEW - 834px/16 (Tablets) */
+/*****************************/
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
-/*****************************/
-/* BELOW 834px/16 (Tablets) */
-/*****************************/
 @media (max-width: 52.125em) {
 
   /* ******************************* */
   /* NAVBAR */
   /* ******************************* */
+  #navbar {
+    position: relative;
+    z-index: 3;
+  }
+
   #navbar .nav-menu {
-    display: none;
+    position: absolute;
+    top: 8rem;
+    left: -100%;
+    opacity: 0;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background-color: var(--black);
+    padding: 0 3.2rem 8rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+  }
+
+  #navbar .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 400ms ease;
   }
 
   #navbar .menu-outline {
     display: block;
+  }
+
+  #navbar .nav-link:link,
+  #navbar .nav-link:visited {
+    font: var(--lead-light);
+  }
+
+  #navbar .nav-link.current {
+    font: var(--lead-bold);
+  }
+
+  #navbar .logo.hidden {
+    visibility: hidden;
   }
 
   /* ******************************* */
