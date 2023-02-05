@@ -1,12 +1,14 @@
 // VARIABLES
+const menuIconsWrapper = document.querySelector(".menu-icons");
 const menuIcon = document.querySelector(".menu-outline");
+const closeIcon = document.querySelector(".close-outline");
 const navbarMenu = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo");
 const navbarLinks = document.querySelectorAll(".nav-link");
 
 
 // EVENT LISTENERS
-menuIcon.addEventListener("click", toggleMenu);
+menuIconsWrapper.addEventListener("click", toggleMenu);
 
 navbarLinks.forEach(link => {
   link.addEventListener("click", () => {
@@ -18,7 +20,11 @@ navbarLinks.forEach(link => {
 function toggleMenu() {
   navbarMenu.classList.toggle("active");
   logo.classList.toggle("hidden");
+  menuIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("show");
 }
+
+console.log(menuOutline)
 
 
 

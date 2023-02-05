@@ -35,8 +35,20 @@
     transition: all 400ms ease;
   }
 
-  #navbar .menu-outline {
+  #navbar .menu-icons {
     display: block;
+  }
+
+  #navbar .close-outline {
+    display: none;
+  }
+
+  #navbar .close-outline.show {
+    display: block;
+  }
+
+  #navbar .menu-outline.hide {
+    display: none;
   }
 
   #navbar .nav-link:link,

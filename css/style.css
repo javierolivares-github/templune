@@ -130,6 +130,7 @@ html {
 }
 
 .menu-outline,
+.close-outline,
 .pie-chart,
 .calendar-outline,
 .chatbox,
@@ -193,7 +194,7 @@ html {
   color: var(--white);
 } */
 
-#navbar .menu-outline {
+#navbar .menu-icons {
   display: none;
 }
 
