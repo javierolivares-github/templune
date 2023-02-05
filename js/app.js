@@ -3,7 +3,6 @@ const menuIcon = document.querySelector(".menu-outline");
 const navbarMenu = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo");
 const navbarLinks = document.querySelectorAll(".nav-link");
-const body = document.querySelector("body");
 
 
 // EVENT LISTENERS

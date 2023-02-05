@@ -19,7 +19,6 @@
     opacity: 0;
     width: 100%;
     height: calc(100vh - 8rem);
-    max-height: 100%;
     overflow: hidden;
     background-color: var(--black);
     padding: 0 3.2rem 8rem 3.2rem;
