@@ -1,8 +1,8 @@
 /*****************************/
-/* TABLET VIEW - 834px/16 (Tablets) */
+/* TABLET VIEW - 900px/16 (Tablets) */
 /*****************************/
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-@media (max-width: 52.125em) {
+@media (max-width: 56.25em) {
 
   /* ******************************* */
   /* NAVBAR */
